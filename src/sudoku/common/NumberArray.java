@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class NumberArray {
 
+	/**
+	 * １〜９をセットしたArrayListを返却する。
+	 * @return ArrayList<String> numberArray
+	 */
 	public ArrayList<String> numberArray() {
 		ArrayList<String>numberArray = new ArrayList<String>();
 		
