@@ -1,4 +1,4 @@
-package sudoku.common;
+package sudoku.dto;
 
 /**
  * 数独で使う９＊９のマス

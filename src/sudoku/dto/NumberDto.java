@@ -1,4 +1,6 @@
-package sudoku.common;
+package sudoku.dto;
+
+import sudoku.common.NumberConsts;
 
 /**
  * 数独で使用する数字

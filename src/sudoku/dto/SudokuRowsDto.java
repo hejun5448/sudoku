@@ -1,4 +1,4 @@
-package sudoku.common;
+package sudoku.dto;
 
 /**
  * 数独で使う１行を定義した構造体
