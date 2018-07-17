@@ -5,7 +5,7 @@ package sudoku.dto;
  * @author masudakennin
  *
  */
-public class SudokuMatrix {
+public class SudokuMatrixDto {
 	/**
 	 * 行の構造体で列の構造体を宣言（９＊９の正方形）
 	 */
