@@ -47,4 +47,14 @@ public class NumberConsts {
 	 */
 	public static String STR_9 = "9";
 	
+	/**
+	 * 数字の確定
+	 */
+	public static String DIFINITION_NUMBER = "difinition";
+	
+	/**
+	 * 候補の数字
+	 */
+	public static String VARIABLE_NUMBER = "variable";
+
 }

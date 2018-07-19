@@ -9,15 +9,15 @@ public class SudokuInit {
 	 */
 	public SudokuRowsDto initSudokuRowsDto() {
 		//NumberDtoの初期化
-		NumberDto numDto1 = new NumberDto();
-		NumberDto numDto2 = new NumberDto();
-		NumberDto numDto3 = new NumberDto();
-		NumberDto numDto4 = new NumberDto();
-		NumberDto numDto5 = new NumberDto();
-		NumberDto numDto6 = new NumberDto();
-		NumberDto numDto7 = new NumberDto();
-		NumberDto numDto8 = new NumberDto();
-		NumberDto numDto9 = new NumberDto();
+		VariableNumberDto numDto1 = new VariableNumberDto();
+		VariableNumberDto numDto2 = new VariableNumberDto();
+		VariableNumberDto numDto3 = new VariableNumberDto();
+		VariableNumberDto numDto4 = new VariableNumberDto();
+		VariableNumberDto numDto5 = new VariableNumberDto();
+		VariableNumberDto numDto6 = new VariableNumberDto();
+		VariableNumberDto numDto7 = new VariableNumberDto();
+		VariableNumberDto numDto8 = new VariableNumberDto();
+		VariableNumberDto numDto9 = new VariableNumberDto();
 		
 		//SudokuCellDtoの初期化と設定
 		SudokuCellDto cellDto1 = new SudokuCellDto();

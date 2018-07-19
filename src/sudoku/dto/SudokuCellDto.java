@@ -20,9 +20,9 @@ public class SudokuCellDto {
 	private String number = null;
 	
 	/**
-	 * 数独で使用する数字
+	 * 数独で使用する数字の候補
 	 */
-	private NumberDto numberDto;
+	private VariableNumberDto variableNumberDto;
 
 	/**
 	 * @return the configStatus
@@ -53,17 +53,17 @@ public class SudokuCellDto {
 	}
 
 	/**
-	 * @return the numberDto
+	 * @return the variableNumberDto
 	 */
-	public NumberDto getNumberDto() {
-		return numberDto;
+	public VariableNumberDto getNumberDto() {
+		return variableNumberDto;
 	}
 
 	/**
-	 * @param numberDto the numberDto to set
+	 * @param variableNumberDto the variableNumberDto to set
 	 */
-	public void setNumberDto(NumberDto numberDto) {
-		this.numberDto = numberDto;
+	public void setNumberDto(VariableNumberDto variableNumberDto) {
+		this.variableNumberDto = variableNumberDto;
 	}
 	
 }

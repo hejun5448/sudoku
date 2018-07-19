@@ -7,7 +7,7 @@ import sudoku.common.NumberConsts;
  * @author masudakennin
  *
  */
-public class NumberDto {
+public class NumberDto2 {
 	/**
 	 * １〜９までの変数を宣言し、それに応じた定数を設定
 	 */

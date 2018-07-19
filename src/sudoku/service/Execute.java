@@ -6,9 +6,14 @@ public class Execute {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SudokuMatrixDto matrix = new SudokuMatrixDto();
+		SudokuInit sudokuInit = new SudokuInit();
 		
-		System.out.println(matrix.getCol1());
+		SudokuMatrixDto matrix = sudokuInit.initSudokuMatrixDto();
+		System.out.println(sudokuInit.initSudokuMatrixDto());
+		System.out.println(matrix.getCol1().getRow1().getNumberDto().getStr2());
+		
+		
+		
 	}
 
 }
