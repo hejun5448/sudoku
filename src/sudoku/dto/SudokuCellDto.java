@@ -55,14 +55,14 @@ public class SudokuCellDto {
 	/**
 	 * @return the variableNumberDto
 	 */
-	public VariableNumberDto getNumberDto() {
+	public VariableNumberDto getVariableNumberDto() {
 		return variableNumberDto;
 	}
 
 	/**
 	 * @param variableNumberDto the variableNumberDto to set
 	 */
-	public void setNumberDto(VariableNumberDto variableNumberDto) {
+	public void setVariableNumberDto(VariableNumberDto variableNumberDto) {
 		this.variableNumberDto = variableNumberDto;
 	}
 	

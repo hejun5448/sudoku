@@ -1,5 +1,7 @@
 package sudoku.service;
 
+import java.util.ArrayList;
+
 import sudoku.dto.*;
 public class SudokuInit {
 
@@ -30,27 +32,30 @@ public class SudokuInit {
 		SudokuCellDto cellDto8 = new SudokuCellDto();
 		SudokuCellDto cellDto9 = new SudokuCellDto();
 		
-		cellDto1.setNumberDto(numDto1);
-		cellDto2.setNumberDto(numDto2);
-		cellDto3.setNumberDto(numDto3);
-		cellDto4.setNumberDto(numDto4);
-		cellDto5.setNumberDto(numDto5);
-		cellDto6.setNumberDto(numDto6);
-		cellDto7.setNumberDto(numDto7);
-		cellDto8.setNumberDto(numDto8);
-		cellDto9.setNumberDto(numDto9);
+		cellDto1.setVariableNumberDto(numDto1);
+		cellDto2.setVariableNumberDto(numDto2);
+		cellDto3.setVariableNumberDto(numDto3);
+		cellDto4.setVariableNumberDto(numDto4);
+		cellDto5.setVariableNumberDto(numDto5);
+		cellDto6.setVariableNumberDto(numDto6);
+		cellDto7.setVariableNumberDto(numDto7);
+		cellDto8.setVariableNumberDto(numDto8);
+		cellDto9.setVariableNumberDto(numDto9);
+		
+		ArrayList<SudokuCellDto> sudokuCellDtoList = new ArrayList<SudokuCellDto>();
+		sudokuCellDtoList.add(cellDto1);
+		sudokuCellDtoList.add(cellDto2);
+		sudokuCellDtoList.add(cellDto3);
+		sudokuCellDtoList.add(cellDto4);
+		sudokuCellDtoList.add(cellDto5);
+		sudokuCellDtoList.add(cellDto6);
+		sudokuCellDtoList.add(cellDto7);
+		sudokuCellDtoList.add(cellDto8);
+		sudokuCellDtoList.add(cellDto9);
 		
 		//SudokuRowsDtoの初期化と設定
 		SudokuRowsDto rowsDto = new SudokuRowsDto();
-		rowsDto.setRow1(cellDto1);
-		rowsDto.setRow2(cellDto2);
-		rowsDto.setRow3(cellDto3);
-		rowsDto.setRow4(cellDto4);
-		rowsDto.setRow5(cellDto5);
-		rowsDto.setRow6(cellDto6);
-		rowsDto.setRow7(cellDto7);
-		rowsDto.setRow8(cellDto8);
-		rowsDto.setRow9(cellDto9);
+		rowsDto.setSudokuRowsCellList(sudokuCellDtoList);
 		
 		return rowsDto;
 	}
@@ -60,17 +65,21 @@ public class SudokuInit {
 	 * @return 9*9マスの表を返却する
 	 */
 	public SudokuMatrixDto initSudokuMatrixDto() {
+		//列の作成
+		ArrayList<SudokuRowsDto> sudokuRowsDtoList = new ArrayList<SudokuRowsDto>();
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		sudokuRowsDtoList.add(this.initSudokuRowsDto());
+		
 		//SudokuMatrixDtoの初期化と設定
 		SudokuMatrixDto matrixDto = new SudokuMatrixDto();
-		matrixDto.setCol1(this.initSudokuRowsDto());
-		matrixDto.setCol2(this.initSudokuRowsDto());
-		matrixDto.setCol3(this.initSudokuRowsDto());
-		matrixDto.setCol4(this.initSudokuRowsDto());
-		matrixDto.setCol5(this.initSudokuRowsDto());
-		matrixDto.setCol6(this.initSudokuRowsDto());
-		matrixDto.setCol7(this.initSudokuRowsDto());
-		matrixDto.setCol8(this.initSudokuRowsDto());
-		matrixDto.setCol9(this.initSudokuRowsDto());
+		matrixDto.setSudokuColList(sudokuRowsDtoList);
 		
 		return matrixDto;
 	}
