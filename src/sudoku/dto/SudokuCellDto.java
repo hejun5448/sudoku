@@ -8,10 +8,10 @@ package sudoku.dto;
 public class SudokuCellDto {
 
 	/**
-	 * 数独設定のステータス
+	 * １マスのステータス
 	 * 初期値：false
 	 */
-	private boolean configStatus = false;
+	private boolean cellStatus = false;
 	
 	/**
 	 * 表示用数字（文字列）
@@ -27,15 +27,15 @@ public class SudokuCellDto {
 	/**
 	 * @return the configStatus
 	 */
-	public boolean isConfigStatus() {
-		return configStatus;
+	public boolean isCellStatus() {
+		return cellStatus;
 	}
 
 	/**
 	 * @param configStatus the configStatus to set
 	 */
-	public void setConfigStatus(boolean configStatus) {
-		this.configStatus = configStatus;
+	public void setCellStatus(boolean cellStatus) {
+		this.cellStatus = cellStatus;
 	}
 
 	/**

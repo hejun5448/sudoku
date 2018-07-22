@@ -1,6 +1,8 @@
-package sudoku.common;
+package devLabo;
 
 import java.util.ArrayList;
+
+import sudoku.common.NumberConsts;
 
 public class NumberArray {
 

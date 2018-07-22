@@ -56,5 +56,13 @@ public class NumberConsts {
 	 * 候補の数字
 	 */
 	public static String VARIABLE_NUMBER = "variable";
+	
+	/**
+	 * 候補ではない数字
+	 */
+	public static String NOT_VARIABLE_NUMBER = "notVariable";
+	
+	
+	
 
 }

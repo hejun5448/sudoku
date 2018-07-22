@@ -10,7 +10,7 @@ public class Execute {
 		
 		SudokuMatrixDto matrix = sudokuInit.initSudokuMatrixDto();
 		System.out.println(sudokuInit.initSudokuMatrixDto());
-		System.out.println(matrix.getCol1().getRow1().getNumberDto().getStr2());
+		System.out.println(matrix.getCol1().getRow1().getNumberDto().getNumbersList().get(0));
 		
 		
 		

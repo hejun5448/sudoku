@@ -3,7 +3,15 @@ package sudoku.dto;
 import sudoku.common.*;
 
 public class Number {
+	/**
+	 * 数字
+	 */
 	private String number = null;
+	
+	/**
+	 * 数字ステータス
+	 * 初期値：候補の数字
+	 */
 	private String numberStatus = NumberConsts.VARIABLE_NUMBER;
 	
 	public Number(String num) {
