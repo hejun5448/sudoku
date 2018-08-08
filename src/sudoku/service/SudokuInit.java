@@ -2,7 +2,9 @@ package sudoku.service;
 
 import java.util.ArrayList;
 
+import sudoku.common.NumberConsts;
 import sudoku.dto.*;
+import sudoku.dto.Number;
 public class SudokuInit {
 
 	/**
@@ -83,4 +85,34 @@ public class SudokuInit {
 		
 		return matrixDto;
 	}
+	/**
+	 * 初期化したVariableNumberDtoを返却する
+	 * @return VariableNumberDto
+	 */
+	public VariableNumberDto initVariableNumberDto(){
+		//ArrayList<NumberDto>の設定（数字１〜９）
+		ArrayList<Number> numberList = new ArrayList<Number>();
+		numberList.add(new Number(NumberConsts.STR_1));
+		numberList.add(new Number(NumberConsts.STR_2));
+		numberList.add(new Number(NumberConsts.STR_3));
+		numberList.add(new Number(NumberConsts.STR_4));
+		numberList.add(new Number(NumberConsts.STR_5));
+		numberList.add(new Number(NumberConsts.STR_6));
+		numberList.add(new Number(NumberConsts.STR_7));
+		numberList.add(new Number(NumberConsts.STR_8));
+		numberList.add(new Number(NumberConsts.STR_9));
+		
+		//設定した数字をVariableNumberDtoへ設定する
+		VariableNumberDto variableNumberDto = new VariableNumberDto();
+		variableNumberDto.setStrList(numberList);
+		
+		return variableNumberDto;
+		
+	}
+	
+	public SudokuOneLineDto initSudokuOneLineDto() {
+		//SudokuCellDtoの設定
+		
+	}
+	
 }

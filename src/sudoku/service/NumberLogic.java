@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import sudoku.common.CommonConsts;
 import sudoku.common.NumberConsts;
-import sudoku.dto.Number;
+import sudoku.dtobk.Number;
 
 public class NumberLogic {
 	/**

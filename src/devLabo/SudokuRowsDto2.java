@@ -1,6 +1,6 @@
 package devLabo;
 
-import sudoku.dto.SudokuCellDto;
+import sudoku.dtobk.SudokuCellDto;
 
 /**
  * 数独で使う１行を定義した構造体

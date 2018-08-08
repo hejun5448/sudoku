@@ -1,6 +1,6 @@
 package devLabo;
 
-import sudoku.dto.SudokuRowsDto;
+import sudoku.dtobk.SudokuRowsDto;
 
 /**
  * 数独で使う９＊９のマス

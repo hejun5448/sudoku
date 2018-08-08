@@ -1,4 +1,4 @@
-package sudoku.dtobk;
+package sudoku.dto;
 
 /**
  * 数独で使う１マス

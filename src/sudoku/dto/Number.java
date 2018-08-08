@@ -1,4 +1,4 @@
-package sudoku.dtobk;
+package sudoku.dto;
 
 import sudoku.common.*;
 

@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 import sudoku.common.CommonConsts;
 import sudoku.common.NumberConsts;
-import sudoku.dto.*;
-import sudoku.dto.Number;
+import sudoku.dtobk.*;
 
 public class SudokuLogic {
 

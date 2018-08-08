@@ -1,4 +1,4 @@
-package sudoku.dto;
+package sudoku.dtobk;
 
 import java.util.ArrayList;
 

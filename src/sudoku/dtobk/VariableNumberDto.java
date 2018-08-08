@@ -1,4 +1,4 @@
-package sudoku.dto;
+package sudoku.dtobk;
 
 import sudoku.common.CommonConsts;
 import sudoku.common.NumberConsts;
